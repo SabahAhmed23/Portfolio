@@ -1,6 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-require("./styles.css");
+import "./src/styles.css";
+
 document.addEventListener('DOMContentLoaded', function () {
     var interBubble = document.querySelector('.interactive');
     var curX = 0;
