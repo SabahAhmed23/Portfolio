@@ -1,5 +1,5 @@
 "use strict";
-import "./src/styles.css";
+import "./styles.css";
 
 document.addEventListener('DOMContentLoaded', function () {
     var interBubble = document.querySelector('.interactive');
