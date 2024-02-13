@@ -1,4 +1,4 @@
-//import "../src/styles.css";
+import "../src/styles.css";
 
 document.addEventListener('DOMContentLoaded', function () {
     const interBubble = document.querySelector('.interactive');
