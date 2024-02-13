@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,156 +10,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="src/styles.css">
-
-  </head>
-  <body>
-  <div class="gradient-bg">
-    <svg xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
-          <feBlend in="SourceGraphic" in2="goo" />
-        </filter>
-      </defs>
-    </svg>
-    <div class="gradients-container">
-      <div class="g1"></div>
-      <div class="g2"></div>
-      <div class="g3"></div>
-      <div class="g4"></div>
-      <div class="g5"></div>
-      <div class="interactive"></div>
+</head>
+<body>
+    <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+        </div>
     </div>
-  </div>
 
-
-
-  <div id="header">
-      <div class="text-container">
-        <nav>
-          <ul id="sidemenu">
-            <li><a href="#sidemenu">Home</a></li>
-            <li><a href="#about">About</a></li>
-            
-            <li><a href="#contact">Networks</a></li>
-        </nav>
-          <div class="header-text"> 
-            <h1><span>SABAH AHMED</span></h1>
-            <p>Web Developer | UI Designer</p>
-          </div>
-      </div>
-  </div>
-
-</div>
-  
-<script type="module" src="../src/main.js"></script>
-
-
-
-
-<div class="container">
-  <div class="about" id="about">
-          <div class="about-col-2">
-            
-              <h1 class="sub-title">About Me</h1>
-              <p>Enter a realm of digital opulence where web development meets refined UI design. 
-                 With meticulous precision, I sculpt immersive experiences that redefine excellence in the digital sphere. 
-                 Welcome to a portfolio where sophistication and innovation converge seamlessly.
-              </p>
-              <button id="emailButton" onclick="copyEmail()">Get in touch &#8594; </button>
-          </div>
-  </div>
-</div>
-
-<script>
-  function copyEmail() {
-  // Create a dummy input element
-  var dummy = document.createElement("input");
-
-  // Assign the email to be copied to the input value
-  dummy.value = "sabah.ahmed1425@gmail.com";
-
-  // Append the dummy input to the document
-  document.body.appendChild(dummy);
-
-  // Select the text inside the input element
-  dummy.select();
-
-  // Execute the copy command
-  document.execCommand("copy");
-
-  // Remove the dummy input from the document
-  document.body.removeChild(dummy);
-}
-
-// Change button text on hover
-document.getElementById("emailButton").addEventListener("mouseover", function() {
-  this.innerText = "Copy email ?";
-});
-
-// Revert button text when mouse leaves
-document.getElementById("emailButton").addEventListener("mouseleave", function() {
-  this.innerText = "Get in touch →";
-});
-
-</script>
-
-
-<div class="bg">
-<div class="scroller">
-  <ul class="tag-list scroller_inner" data-direction="left" id="tag-list">
-    <li><img src="images/html.png" alt="HTML" class="skill-icon"></li>
-    <li><img src="images/css.png" alt="CSS" class="skill-icon"></li>
-    <li><img src="images/javascript.png" alt="JavaScript" class="skill-icon"></li>
-    <li><img src="images/python.png" alt="Python" class="skill-icon"></li>
-    <li><img src="images/java.png" alt="Java" class="skill-icon"></li>
-    <li><img src="images/react.png" alt="React" class="skill-icon"></li>
-    <li><img src="images/sql.png" alt="Database" class="skill-icon"></li>
-    <li><img src="images/figma.png" alt="Figma" class="skill-icon"></li>
-    <li><img src="images/c-.png" alt="C++" class="skill-icon"></li>
-    <li><img src="images/c-sharp.png" alt="C#" class="skill-icon"></li>
-  </ul>
-</div>
-</div>
-
-
-  <div id="contact"> 
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/sabah--ahmed"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/SabahAhmed23"><i class="fab fa-github"></i></a>
+    <div id="header">
+        <div class="text-container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#sidemenu">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Networks</a></li>
+                </ul>
+            </nav>
+            <div class="header-text"> 
+                <h1><span>SABAH AHMED</span></h1>
+                <p>Web Developer | UI Designer</p>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <div class="container">
+        <div class="about" id="about">
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Enter a realm of digital opulence where web development meets refined UI design. 
+                    With meticulous precision, I sculpt immersive experiences that redefine excellence in the digital sphere. 
+                    Welcome to a portfolio where sophistication and innovation converge seamlessly.
+                </p>
+                <button id="emailButton" onclick="copyEmail()">Get in touch &#8594; </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg">
+        <div class="scroller">
+            <ul class="tag-list scroller_inner" data-direction="left" id="tag-list">
+                <!-- List of skill icons -->
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact"> 
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/sabah--ahmed"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/SabahAhmed23"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
     <div class="copyright">
-      <p>copyright &#169; Sabah.</p>
+        <p>copyright &#169; Sabah.</p>
     </div>
 
+    <script>
+        function copyEmail() {
+            // Create a dummy input element
+            var dummy = document.createElement("input");
 
-<script>
+            // Assign the email to be copied to the input value
+            dummy.value = "sabah.ahmed1425@gmail.com";
 
-const scrollers = document.querySelectorAll(".scroller");
+            // Append the dummy input to the document
+            document.body.appendChild(dummy);
 
-if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
-  addAnimation();
-}
+            // Select the text inside the input element
+            dummy.select();
 
-function addAnimation() {
-  scrollers.forEach(scroller => {
-    scroller.setAttribute('data-animated', true);
+            // Execute the copy command
+            document.execCommand("copy");
 
-    const scrollerInner = scroller.querySelector('.scroller_inner');
-    const scrollerContent = Array.from(scrollerInner.children);
+            // Remove the dummy input from the document
+            document.body.removeChild(dummy);
+        }
 
-    scrollerContent.forEach(item => {
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
-    })
-  })
-} 
-</script>
+        // Change button text on hover
+        document.getElementById("emailButton").addEventListener("mouseover", function() {
+            this.innerText = "Copy email ?";
+        });
 
+        // Revert button text when mouse leaves
+        document.getElementById("emailButton").addEventListener("mouseleave", function() {
+            this.innerText = "Get in touch →";
+        });
 
+        const scrollers = document.querySelectorAll(".scroller");
 
-</body>
-</html>
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").
