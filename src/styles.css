@@ -467,18 +467,18 @@ nav ul li a:hover::after {
     position: relative;
   }
   .header-text h1 {
-    font-size: 35px;
+    font-size: 30px;
     position: relative;
   }
   .header-text p{
-    font-size:25px;
+    font-size:20px;
   }
   nav {
     position: relative;
     width: 50px;
     transform: none;
     margin-bottom: 10px; /* Adjust as needed */
-    
+    font-size: 30px;
   }
   nav ul {
     background: #000000;
