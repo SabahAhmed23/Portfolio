@@ -136,8 +136,6 @@ nav ul li a:hover::after {
   position: relative;
   bottom: -30px;
   color: #000000;
-  
-  margin-left: 30px;
   justify-content: center;
   display: flex;
   align-items: center;
