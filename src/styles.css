@@ -12,17 +12,11 @@ html, body {
 }
 
 /*----------------- my port ----------------*/
+.s2{
+display: flex;
+}
 nav {
-  display: flex;
-  align-items: right;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-bottom: 650px;
-  /* margin-left: 50px;
-   margin-right: 50px;*/
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+  margin-bottom: 20px;                                        
 }
 
 p {
@@ -39,7 +33,7 @@ h1 {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 20px 20px;
+  margin: 0px 20px;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
@@ -47,7 +41,6 @@ nav ul li a {
   color: #000000;
   text-decoration: none;
   font-size: 25px;
-  position: relative;
 }
 
 nav ul li a::after {
@@ -55,7 +48,7 @@ nav ul li a::after {
   width: 0;
   height: 3px;
   background: #000000;
-  position: absolute;
+  display: block;
   left: 0;
   bottom: -6px;
   transition: 0.5s;
@@ -68,6 +61,7 @@ nav ul li a:hover::after {
 .header-text {
   margin-top: 0%;
   font-size: 30px;
+  text-align: center;
 }
 
 .header-text h1 {
@@ -87,16 +81,26 @@ nav ul li a:hover::after {
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-/*#header{
-  width: 100%;
-  height: 100vh;
-  background-color: hwb(180 18% 60% / 0.031);
-  background-size: cover;
-  background-position: cover;
-}*/
+
 .text-container {
-  align-items: flex-end;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 96px;
+  color: white;
+  opacity: 0.8;
+  user-select: none;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /*----------------*/
 /*----------about---------*/
@@ -112,28 +116,31 @@ nav ul li a:hover::after {
 }
 
 .about {
-  position: absolute;
-  width: 220px;
+  position: relative;
+  width: 100vw;
   height: 200px;
   color: #000000;
   text-align: center;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
 .about p {
   opacity: 1;
+  display: flex;
   position: relative;
   bottom: -30px;
-  left: 0;
-  width: 500%;
   color: #000000;
+  
+  margin-left: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   padding: 10px;
   /*transition: opacity 1s ease-in-out, bottom 1s ease-in-out;*/
   font-size: 25px;
-  text-align: center;
-  margin-right: 700px;
-  margin-left: -452px;
+  margin-right: 0;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   text-decoration: none;
   line-height: 40px;
@@ -169,6 +176,9 @@ nav ul li a:hover::after {
   transition: background-color 0.5s, color 0.5s;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   font-size: 25px;
+  
+  justify-content: center;
+  align-items: center;
 }
 
 #emailButton:hover {
@@ -202,9 +212,12 @@ nav ul li a:hover::after {
   line-height: 28px;
 }*/
 .scroller {
-  max-width: 800px;
+  
+  margin-left: 300px;
+  margin-right: 300px;
   background-color: #f6f3f7;
-  margin-left: 360px;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg {
@@ -268,16 +281,17 @@ nav ul li a:hover::after {
   width: 100vw;
   background-color: #f6f3f7;
   justify-content: center;
-  padding-left: 725px;
+  display: flex;
+  align-items: center;
 }
 
 .social-icons a {
   text-decoration: none;
   padding-top: 50px;
   font-size: 30px;
-  margin-right: 15px;
+  margin: 10px;
   color: #0a0909;
-  display: inline-block;
+  display: flex;
   transition: transform 0.5s;
 }
 
@@ -305,22 +319,7 @@ nav ul li a:hover::after {
 /*------------------contact ends------------------*/
 /*-------------form---------------------*/
 /*---------------------form ends------------*/
-  .text-container {
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    font-size: 96px;
-    color: white;
-    opacity: 0.8;
-    user-select: none;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
-}
+
 
 :root {
   --color-bg1: #f6f3f7;
@@ -377,15 +376,15 @@ nav ul li a:hover::after {
   top: 0;
   left: 0;
 }
-svg {
+.gradient-bg svg {
   display: none;
 }
-.gradients-container {
+.gradient-bg .gradients-container {
   filter: url(#goo) blur(30px);
   width: 100%;
   height: 100%;
 }
-.g1 {
+.gradient-bg .g1 {
   position: absolute;
   background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
@@ -397,7 +396,7 @@ svg {
   animation: moveVertical 30s ease infinite;
   opacity: 1;
 }
-.g2 {
+.gradient-bg .g2 {
   position: absolute;
   background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
@@ -409,7 +408,7 @@ svg {
   animation: moveInCircle 20s reverse infinite;
   opacity: 1;
 }
-.g3 {
+.gradient-bg .g3 {
   position: absolute;
   background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
@@ -421,7 +420,7 @@ svg {
   animation: moveInCircle 40s linear infinite;
   opacity: 1;
 }
-.g4 {
+.gradient-bg .g4 {
   position: absolute;
   background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
@@ -433,7 +432,7 @@ svg {
   animation: moveHorizontal 40s ease infinite;
   opacity: 0.7;
 }
-.g5 {
+.gradient-bg .g5 {
   position: absolute;
   background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
@@ -445,7 +444,7 @@ svg {
   animation: moveInCircle 20s ease infinite;
   opacity: 1;
 }
-.interactive {
+.gradient-bg .interactive {
   position: absolute;
   background: radial-gradient(circle at center, rgba(var(--color-interactive), 0.8) 0, rgba(var(--color-interactive), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
@@ -492,4 +491,4 @@ svg {
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+
