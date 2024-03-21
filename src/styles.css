@@ -461,17 +461,17 @@ nav ul li a:hover::after {
 /*--------------media-------------*/
 @media only screen and (max-width: 768px) {
   .header-text {
-    font-size: 16px;
+    font-size: 30px;
   }
   .s2{
     position: relative;
   }
   .header-text h1 {
-    font-size: 20px;
+    font-size: 30px;
     position: relative;
   }
   .header-text p{
-    font-size:10px;
+    font-size:20px;
   }
   nav {
     position: absolute;
