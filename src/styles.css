@@ -508,7 +508,10 @@ nav ul li a:hover::after {
     width: 30px;
     height: 90px;
   }
-  
+  .skill-icon{
+    width: 20px;
+    height: 20px;
+  }
   #contact {
     flex-basis: 17.5%;
     font-size: 10p;
@@ -530,8 +533,9 @@ nav ul li a:hover::after {
   .bg {
     background-color: #f6f3f7;
     width: 100vw;
-    height: 200px;
-    padding-top: 50px;
+    height: 125px;
+    padding-top:30px;
+    padding-bottom: 30px;
   }
 
 
@@ -566,7 +570,7 @@ nav ul li a:hover::after {
   .skill-icon {
     width: 50px;
     height: 50px;
-    margin: 2px;
+    margin: 5px;
     opacity: 0.7;
     transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     
