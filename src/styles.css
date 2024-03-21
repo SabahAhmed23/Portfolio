@@ -475,7 +475,7 @@ nav ul li a:hover::after {
   }
   nav {
     position: relative;
-    width: 50px;
+    width: 30px;
     transform: none;
     margin-bottom: 10px; /* Adjust as needed */
     font-size: 30px;
@@ -531,8 +531,7 @@ nav ul li a:hover::after {
     background-color: #f6f3f7;
     justify-content: center;
     align-items: center;
-    
-    margin-top: 60px;
+    margin-top: 70px;
     
   }
   
