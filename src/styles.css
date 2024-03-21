@@ -135,8 +135,8 @@ nav ul li a:hover::after {
   display: flex;
   position: relative;
   bottom: -30px;
-  margin-left: 30px;
   color: #000000;
+  margin-left: 30px;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -467,18 +467,18 @@ nav ul li a:hover::after {
     position: relative;
   }
   .header-text h1 {
-    font-size: 30px;
+    font-size: 35px;
     position: relative;
   }
   .header-text p{
-    font-size:20px;
+    font-size:25px;
   }
   nav {
-    position: absolute;
-    width: auto;
+    position: relative;
+    width: 50px;
     transform: none;
-    margin-bottom: 20px; /* Adjust as needed */
-    margin-top: -300px;
+    margin-bottom: 10px; /* Adjust as needed */
+    
   }
   nav ul {
     background: #000000;
@@ -496,14 +496,112 @@ nav ul li a:hover::after {
     margin: 20px;
   }
   .about-col-2 h1{
-    font-size:30px;
+    font-size: 30px;
   }
   .about-col-2 p{
-    font-size:20px;
+    font-size: 20px;
   }
-  .about-col-2 button{
-    font-size:20px;
+  #emailButton{
+    font-size: 20px;
   }
+  .tag-list{
+    width: 30px;
+    height: 90px;
+  }
+  .skill-icon{
+    width: 20px;
+    height: 20px;
+  }
+  #contact {
+    flex-basis: 17.5%;
+    font-size: 10p;
+    height: 35px;
+    background-color: #f6f3f7;
+  }
+  .copyright p{
+    font-size: 15px;
+  }
+  .scroller {
+    padding-top: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+    background-color: #f6f3f7;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bg {
+    background-color: #f6f3f7;
+    width: 100vw;
+    height: 200px;
+    padding-top: 50px;
+  }
+
+
+  .scroller[data-animated=true] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(to right, transparent, #101415 10%, #101415 90%, transparent), linear-gradient(to left, transparent, #101415 10%, #101415 90%, transparent);
+    mask: linear-gradient(to right, transparent, #101415 10%, #101415 90%, transparent), linear-gradient(to left, transparent, #101415 10%, #101415 90%, transparent);
+  }
+  
+  .scroller[data-animated=true] .scroller_inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction=left] {
+    --_animation-direction: forward;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  .scroller_inner {
+    display: flex;
+    gap: 1rem;
+    padding-block: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+    margin: 7.5px;
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+  
+  .skill-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+
+  nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 12.5px;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #000000;
+    display: block;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
 }
 
-
+/*# sourceMappingURL=styles.css.map */
