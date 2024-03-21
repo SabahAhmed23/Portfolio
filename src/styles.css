@@ -143,7 +143,7 @@ nav ul li a:hover::after {
   padding: 10px;
   /*transition: opacity 1s ease-in-out, bottom 1s ease-in-out;*/
   font-size: 25px;
-  margin-right: 0;
+  margin-right: 30px;
   font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   text-decoration: none;
   line-height: 40px;
