@@ -495,7 +495,15 @@ nav ul li a:hover::after {
     display: block;
     margin: 20px;
   }
-  
+  .about-col-2 h1{
+    font-size:30px;
+  }
+  .about-col-2 p{
+    font-size:20px;
+  }
+  .about-col-2 button{
+    font-size:20px;
+  }
 }
 
 
